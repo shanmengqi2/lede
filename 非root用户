@@ -1,0 +1,7 @@
+1. 返回root用户，如果你已经重新登陆root，可以略过此步骤，su - root
+2. 删除刚建立的账号，userdel -rf user1
+3. 重新建立账号，useradd -r -m -s /bin/bash user1
+4. passwd user1，根据提示输入密码
+5. su - user1
+6. cd ~
+7. 继续你的编译步骤，git clone 之类的
